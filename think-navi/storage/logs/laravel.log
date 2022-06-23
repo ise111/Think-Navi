@@ -807,3 +807,11 @@
 #45 /var/www/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #46 {main}
 "} 
+[2022-06-23 18:01:02] production.ERROR: Cannot redeclare App\Http\Kernel::$middleware {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare App\\Http\\Kernel::$middleware at /var/www/app/Http/Kernel.php:68)
+[stacktrace]
+#0 {main}
+"} 
+[2022-06-23 18:02:02] production.ERROR: Cannot redeclare App\Http\Kernel::$middleware {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare App\\Http\\Kernel::$middleware at /var/www/app/Http/Kernel.php:68)
+[stacktrace]
+#0 {main}
+"} 
