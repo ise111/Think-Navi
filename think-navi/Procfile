@@ -1,1 +1,1 @@
-web: bendor/vin/heroku-php-apache2 public/
+web: vendor/vin/heroku-php-apache2 public/
