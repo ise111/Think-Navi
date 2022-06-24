@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ThinkFileRequest;
 use App\Models\Models\ThinkFiles;
 use App\Models\Models\ThinkMemos;
 use App\Models\Models\ThinkTargetFiles;
@@ -52,7 +51,7 @@ class MainController extends Controller
      * ファイルの作成
      *
      */
-    public function createNewFiles(ThinkFileRequest $request, ThinkFiles $thinkFile, Thinks $thinks)
+    public function createNewFiles(Request $request, ThinkFiles $thinkFile, Thinks $thinks)
     {
         $request->validate([
             'name' => ['required'],
