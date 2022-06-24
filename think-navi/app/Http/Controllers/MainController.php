@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ThinkRequest;
 use App\Http\Requests\ThinkFileRequest;
 use App\Models\Models\ThinkFiles;
 use App\Models\Models\ThinkMemos;
@@ -11,7 +10,6 @@ use App\Models\Models\ThinkTargets;
 use App\Models\Models\ThinkGoals;
 use App\Models\Models\ThinkGoalFiles;
 use App\Models\Models\ThinkGroups;
-use App\Models\User;
 use App\Models\Models\Thinks;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
