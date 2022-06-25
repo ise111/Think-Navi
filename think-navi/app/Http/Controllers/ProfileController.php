@@ -15,6 +15,9 @@ class ProfileController extends Controller
 
     public function updateProfile(Request $request)
     {
+        $request->validate([
+            'avatar' => ['required'],
+        ]);
         $user = Auth::user();
         $avatar = $request->avatar;
         if ($avatar) {
@@ -23,9 +26,9 @@ class ProfileController extends Controller
             }
             $avatarName = $avatar->getClientOriginalName();
             $avatar->storeAs('public/avatars/', $avatarName);
+            $user->avatar_file_name = $avatarName;
         }
 
-        $user->avatar_file_name = $avatarName;
         $user->name = $request->name;
         $user->email = $request->email;
         $user->save();
